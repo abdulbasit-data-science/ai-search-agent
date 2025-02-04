@@ -5,7 +5,7 @@ A Streamlit-based chatbot that combines AI language models with search capabilit
 ## Features
 
 - Interactive chat interface using Streamlit
-- Integration with Groq's Gemma 2 9B model
+- Integration with Deepseek-r1
 - Real-time web search capabilities via Tavily Search
 - Session-based chat history
 - ReAct agent implementation for improved reasoning
