@@ -28,7 +28,7 @@ def main():
     tools = [search]
     
     model = ChatGroq(
-        model="gemma2-9b-it", 
+        model="deepseek-r1-distill-llama-70b", 
         groq_api_key=os.getenv("GROQ_API_KEY")
     )
     
