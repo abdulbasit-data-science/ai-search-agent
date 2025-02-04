@@ -82,7 +82,7 @@ streamlit run app.py
 
 The chatbot combines several key components:
 - Streamlit for the web interface
-- Groq's Gemma 2 9B model for natural language processing
+- Deepseek-r1 model for natural language processing
 - Tavily Search for real-time web search capabilities
 - LangChain's ReAct agent for reasoning and response generation
 
