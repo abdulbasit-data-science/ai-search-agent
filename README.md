@@ -21,3 +21,4 @@ A conversational AI chatbot with integrated web search, built using **Streamlit,
 git clone https://github.com/abdulbasit-data-science/ai-search-chatbot.git
 cd ai-search-chatbot
 
+### **1️⃣ Clone the repository**  
