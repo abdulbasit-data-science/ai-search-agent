@@ -1,65 +1,108 @@
-# 🤖 AI Search Chatbot  
-A conversational AI chatbot with integrated web search, built using **Streamlit, LangChain, LangGraph, and Tavily API**.
+# AI Search Chatbot
 
-## 🌟 Features  
-- **Conversational AI** powered by Groq’s `gemma2-9b-it` model.  
-- **Web Search Integration** using Tavily API.  
-- **Memory** to maintain chat history in Streamlit.  
-- **User-Friendly Interface** with interactive chat experience.  
+A Streamlit-based chatbot that combines AI language models with search capabilities using Groq and Tavily Search.
 
-## 🛠️ Technologies Used  
-- **Python**  
-- **Streamlit** (for UI)  
-- **LangChain** & **LangGraph** (for agent behavior)  
-- **Tavily API** (for web search)  
-- **Groq AI** (for LLM-powered responses)  
+## Features
 
+- Interactive chat interface using Streamlit
+- Integration with Groq's Gemma 2 9B model
+- Real-time web search capabilities via Tavily Search
+- Session-based chat history
+- ReAct agent implementation for improved reasoning
 
-## 🚀 Installation  
-### **1️⃣ Clone the repository**  
+## Project Structure
+
+```
+ai-search-chatbot/
+├── .env                    # Environment variables configuration
+├── .gitignore             # Git ignore file
+├── README.md              # Project documentation
+├── requirements.txt       # Project dependencies
+└── app.py                # Main application file
+```
+
+## Prerequisites
+
+- Python 3.8+
+- Groq API key
+- Tavily API key
+
+## Installation
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/abdulbasit-data-science/ai-search-chatbot.git
 cd ai-search-chatbot
+```
 
-2️⃣ Set up a virtual environment (optional but recommended)
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Mac/Linux
-venv\Scripts\activate     # On Windows
-3️⃣ Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4️⃣ Set up API keys
-Create a .env file in the project root and add:
+2. Create a virtual environment using `uv`:
+```bash
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
 
-env
-Copy
-Edit
-TAVILY_API_KEY=your_tavily_api_key
-GROQ_API_KEY=your_groq_api_key
-5️⃣ Run the chatbot
-bash
-Copy
-Edit
+3. Install the required dependencies:
+```bash
+uv pip install -r requirements.txt
+```
+
+4. Create a `.env` file in the root directory and add your API keys:
+```
+GROQ_API_KEY=your_groq_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+```
+
+## Dependencies
+
+Create a `requirements.txt` file with the following dependencies:
+
+```
+streamlit
+python-dotenv
+langchain-community
+langchain-groq
+langgraph
+```
+
+## Usage
+
+1. Activate your virtual environment:
+```bash
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+2. Run the Streamlit app:
+```bash
 streamlit run app.py
-📸 Screenshots (Optional)
-If you have a UI screenshot, add it inside the assets/ folder and reference it like this:
+```
 
-md
-Copy
-Edit
-![Chatbot UI](assets/chatbot-ui.png)
-🤝 Contributing
-Contributions are welcome! If you'd like to improve this chatbot, feel free to submit a pull request.
+3. Open your web browser and navigate to `http://localhost:8501`
 
-📜 License
-This project is licensed under the MIT License.
+## How It Works
 
-⭐ Show Some Support!
-If you like this project, don't forget to star ⭐ this repository on GitHub! 🚀
+The chatbot combines several key components:
+- Streamlit for the web interface
+- Groq's Gemma 2 9B model for natural language processing
+- Tavily Search for real-time web search capabilities
+- LangChain's ReAct agent for reasoning and response generation
 
+The application maintains a session-based chat history and can perform web searches to provide up-to-date information in responses.
 
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Groq for providing the language model API
+- Tavily for the search API
+- Streamlit for the web framework
+- LangChain for the agent framework
