@@ -1,0 +1,9 @@
+langchain-community
+langgraph
+tavily-python
+langgraph-checkpoint-sqlite
+langchain-groq
+streamlit
+
+
+
