@@ -21,4 +21,11 @@ A conversational AI chatbot with integrated web search, built using **Streamlit,
 git clone https://github.com/abdulbasit-data-science/ai-search-chatbot.git
 cd ai-search-chatbot
 
-### **1️⃣ Clone the repository**  
+
+  
+### **2️⃣ Set up a virtual environment (optional but recommended)**
+
+python -m venv venv
+source venv/bin/activate  # On Mac/Linux
+venv\Scripts\activate     # On Windows
+
