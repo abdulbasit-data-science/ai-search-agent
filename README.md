@@ -31,7 +31,7 @@ ai-search-chatbot/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/abdulbasit-data-science/ai-search-chatbot.git
+git clone https://github.com/abdulbasit-data-science/ai-search-agent.git
 cd ai-search-chatbot
 ```
 
