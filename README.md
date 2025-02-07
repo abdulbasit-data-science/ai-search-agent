@@ -1,6 +1,6 @@
 # AI Search Agent
 
-A Streamlit-based Agentt that combines AI language models with search capabilities using Groq and Tavily Search.
+A Streamlit-based Agent that combines AI language models with search capabilities using Groq and Tavily Search.
 
 ## Features
 
