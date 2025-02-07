@@ -1,6 +1,6 @@
-# AI Search Chatbot
+# AI Search Agent
 
-A Streamlit-based chatbot that combines AI language models with search capabilities using Groq and Tavily Search.
+A Streamlit-based Agentt that combines AI language models with search capabilities using Groq and Tavily Search.
 
 ## Features
 
